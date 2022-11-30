@@ -4,9 +4,6 @@ from .forms import CriarContaForm, FormHomepage
 from django.views.generic import TemplateView, ListView, DetailView, FormView, UpdateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 
-#def homepage(request):
-    #return render(request, "homepage.html")
-
 class Homepage(FormView):
     template_name = 'homepage.html'
     form_class = FormHomepage
